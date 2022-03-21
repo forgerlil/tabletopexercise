@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0 2rem 0 1rem;
+}
+
+.logo-img {
+  height: 90px;
+  width: 90px;
+}
+
+header h1 {
+  color: #FFF;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+header h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Navigation bar on header */
+
+nav {
+  width: 50%;
+  margin: 0 2rem;
+}
+ 
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+}
+
+nav ul li {
+  width: 20%;
+  height: 50px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;  
+  text-align: center;
+}
+
+nav ul li a {
+  padding: .25em 1em;
+}
+
+nav ul li:hover {
+  background-color: rgb(192, 192, 32);
+  transition: background-color .35s;
+}
+
+/* Dropdown menu - still on testing stages */
+
+.dropdown-activity {
+  visibility: hidden;
+  flex-direction: column;
+  position: fixed;
+  width: 300px;
+  height: 400px;
+  background-color: rgb(19, 19, 19);
+  color: white;
+  border-radius: 10px;
+  top: 120px;
+}
+
+.dropdown-activity ul {
+  position: relative;
+}
+
+.dropdown-activity ul li {
+  margin: 30px;
+}
+
+.dropdown-activity ul li:hover {
+  background-color: rgb(19, 19, 19);
+  border-bottom: 1px solid rgb(192, 192, 32);
+}
+
+/* Log in div */
+
+.login {
+  margin: 0 1rem 0 2rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.login input {
+    margin-bottom: 10px;
+    width: 100px;
+    height: 25px;
+    outline: none;
+    border-radius: 4px;
+}
+
+.login input:active {
+  outline: white;
+}
+
+.login-btn {
+  border: 1px solid rgb(192, 192, 32);
+  width: 60px;
+  font-size: inherit;
+  background-color: inherit;
+  color: #FFF;
+  border-radius: 3px;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+  background-color: rgb(192, 192, 32);
+  transition: background-color .35s;
+}
+
+.login p a {
+  padding: 4px;
+}
+
+.login p a:hover {
+  background-color: rgb(192, 192, 32);
+  transition: background-color .35s;
+  border-radius: 3px;
+}
+
+/* Body of page */
+
+main {
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
+}
+
+/* Side menu */
+
+aside {
+    margin: 15px 15px;
+    background-color: rgb(80, 80, 80);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+aside ul {
+  list-style: none;
+  width: 150px;
+}
+
+aside ul li {
+    margin: 20px 0 0;
+}
+
+aside ul li:hover {
+  border-left: 3px solid rgb(192, 192, 32);
+}
+
+aside h3 {
+  padding-bottom: 15px;
+}
+
+/* Main content */
+
+section {
+    height: 100%;
+    min-width: 400px;
+    margin-top: 15px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 30px 0 30px;
+
+}
+
+article {
+    min-height: 200px;
+    margin: 30px 10px;
+}
+
+article figure img {
+  width: 200px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 5px 5px 3px gray;
+}
+
+article figure img:hover {
+  transition: transform 0.35s;
+  transform: scale(1.1);
+  overflow: auto;
+  z-index: 0;
+}
+  
+.article-1 figure img,
+.article-3 figure img {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.article-2 figure img {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+article:first-of-type {
+  margin-top: 40px;
+}
+
+article h3 {
+  margin-bottom: 15px;
+}
+
+article h3 a:hover {
+  color: initial;
+  text-decoration: underline;
+}
+
+/* Footer */
+  
+footer {
+  position: relative;
+  align-content: center;
+  background-color: rgb(19, 19, 19);
+  color: white;
+  height: 120px;
+  width: 100%;
+}
+  
+.footer-ul {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-ul li {
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.footer-ul li a {
+  position: relative;
+  padding: .25em 3em;
+  padding: 20px;
+}
+
+.footer-ul li:hover {
+  background-color: rgb(192, 192, 32);
+  transition: background-color .35s;
+}
+
+footer p {
+  position: absolute;
+  left: 40%;
+  bottom: 10%;
+  text-align: center;
+  font-size: 12px;
+  color:rgb(80, 80, 80);
+}
