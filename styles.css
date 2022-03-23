@@ -87,31 +87,38 @@ nav ul li:hover {
   transition: background-color .35s;
 }
 
-/* Dropdown menu - still on testing stages */
+/* Dropdown menu - still testing */
 
-.dropdown-activity {
+.dropdown-activity-hidden {
+  position: fixed;
   visibility: hidden;
-  flex-direction: column;
+}
+
+.dropdown-activity-visible {
   position: fixed;
   width: 300px;
-  height: 400px;
+  height: 280px;
   background-color: rgb(19, 19, 19);
   color: white;
   border-radius: 10px;
   top: 120px;
+  left: 460px;
 }
 
-.dropdown-activity ul {
+.dropdown-activity-visible ul {
   position: relative;
+  list-style: none;
 }
 
-.dropdown-activity ul li {
-  margin: 30px;
+.dropdown-activity-visible ul li {
+  border-left: 3px solid transparent;
+  margin: 30px 15px;
+  padding-left: 3px;
 }
 
-.dropdown-activity ul li:hover {
+.dropdown-activity-visible ul li:hover {
   background-color: rgb(19, 19, 19);
-  border-bottom: 1px solid rgb(192, 192, 32);
+  border-left: 3px solid rgb(192, 192, 32);
 }
 
 /* Log in div */
@@ -186,7 +193,9 @@ aside ul {
 }
 
 aside ul li {
-    margin: 20px 0 0;
+  margin: 20px 0 0;
+  border-left: 3px solid transparent;
+  padding-left: 3px;
 }
 
 aside ul li:hover {
