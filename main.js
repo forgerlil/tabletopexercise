@@ -1,13 +1,13 @@
-import "styles.css";
+import "./styles.css";
 
 const activityBtn = document.querySelector(".nav-activity");
-const dropdownTest = document.querySelector(".dropdown-activity-hidden");
+const dropdownTest = document.querySelector(".dropdown-activity");
 
-activityBtn.addEventListener("mouseover", function () { dropdownToggleOn });
-activityBtn.addEventListener("mouseout", function () { dropdownToggleOff });
+const dropdownToggleOn = () => dropdownTest.style.visibility="visible";
+const dropdownToggleOff = () => dropdownTest.style.visibility="hidden";
 
-const dropdownToggleOn = () => dropdownTest.style.opacity="0"
-const dropdownToggleOff = () => dropdownTest.style.opacity="1"
+activityBtn.addEventListener('mouseover', dropdownToggleOn);
+activityBtn.addEventListener('mouseout', dropdownToggleOff);
 
 /*
 activityBtn.forEach(function(img){

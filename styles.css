@@ -89,11 +89,19 @@ nav ul li:hover {
 
 /* Dropdown menu - still testing */
 
-.dropdown-activity-hidden {
+.dropdown-activity {
   position: fixed;
   visibility: hidden;
+  width: 300px;
+  height: 280px;
+  background-color: rgb(19, 19, 19);
+  color: white;
+  border-radius: 10px;
+  top: 120px;
+  left: 460px;
 }
 
+/*
 .dropdown-activity-visible {
   position: fixed;
   width: 300px;
@@ -104,6 +112,7 @@ nav ul li:hover {
   top: 120px;
   left: 460px;
 }
+*/
 
 .dropdown-activity-visible ul {
   position: relative;
