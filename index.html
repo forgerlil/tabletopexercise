@@ -5,6 +5,7 @@
 	  <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles.css">
+    <script src="./main.js" defer></script>
   </head>
 
   <body>
@@ -14,21 +15,29 @@
         <h1 class="logo"><a href="#">The Tabletop Club</a></h1>
       </div>
       <nav>
-	      <ul>
-          <li><a href="#">Home</a></li>
+	      <ul class="nav-list">
+          <li class="nav-home"><a href="#" class="nav-link">Home</a></li>
 	        <li class="nav-activity">
-            <a href="#" class="nav-activity">Latest Activity</a>
+            <a href="#" class="nav-link">Latest Activity</a>
+            <div class="dropdown-activity">
+              <ul>
+                <li><a href="#article-1">14.03.22 - This weekend's featured Battle Report</a></li>
+                <li><a href="#article-2">11.03.22 - Exciting events upcoming</a></li>
+                <li><a href="#article-3">07.03.22 - Tutorial: Beyond the basics of airbrushing</a></li>
+                <li><a href="#">See older posts</a></li>
+              </ul>
+            </div>
           </li>
-		      <li>
-            <a href="#">Our Club</a>
+		      <li class="nav-club">
+            <a href="#" class="nav-link">Our Club</a>
             <div class="dropdown-club"></div>
           </li>
-		      <li>
-            <a href="#">Schedule</a>
+		      <li class="nav-schedule">
+            <a href="#" class="nav-link">Schedule</a>
             <div class="dropdown-schedule"></div>
           </li>
-		      <li>
-            <a href="#">Become a Member</a>
+		      <li class="nav-membership">
+            <a href="#" class="nav-link">Become a Member</a>
             <div class="dropdown-membership"></div>
           </li>
 	      </ul>
@@ -40,14 +49,6 @@
           <button type="button" class="login-btn">Log in</button>
         </div>
         <p>Not registered? <a href="#">Sign up</a></p>
-      </div>
-      <div class="dropdown-activity">
-        <ul>
-          <li><a href="#article-1">14.03.22 - This weekend's featured Battle Report</a></li>
-          <li><a href="#article-2">11.03.22 - Exciting events upcoming</a></li>
-          <li><a href="#article-3">07.03.22 - Tutorial: Beyond the basics of airbrushing</a></li>
-          <li><a href="#">See older posts</a></li>
-        </ul>
       </div>
 	</header>
 	<main>
@@ -95,10 +96,6 @@
 	  </ul>
     <p>Copyright 2022 by Intro challenge. All rights reserved <br>Licensed under 12340987.567 </p>
 	</footer>
-
-	<script src="main.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
